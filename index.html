@@ -12,12 +12,15 @@
     <!-- Навигация -->
     <nav>
         <div class="container nav-container">
-            <div class="logo">SkySentry</div>
+            <a href="https://arsenyche.github.io/SkySentry.github.io/" class="logo-link">
+                <div class="logo">SkySentry</div>
+            </a>
             <ul class="nav-links">
                 <li><a href="#problem">Проблема</a></li>
                 <li><a href="#technology">Преимущества</a></li>
                 <li><a href="#demo">Демонстрация</a></li>
                 <li><a href="#tech-stack">Технологии</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -67,8 +70,42 @@
                 </svg>
         </div>
 
+        <div class="drone-hero-slow">
+                <!-- Корпус (основная часть) -->
+                <svg width="260" height="196" viewBox="0 0 100 60">
+                  
+                  <path d="M30 30 Q50 15 70 30 Q50 45 30 30" fill="#A0B9C8" stroke="#879BA9" stroke-width="1"/>
+                  
+                
+                  <path d="M35 35 L35 45 L37 45 L37 35" fill="#B8C9D6"/>
+                  <path d="M63 35 L63 45 L65 45 L65 35" fill="#B8C9D6"/>
+                  
+                  
+                  <circle cx="25" cy="25" r="5" fill="#879BA9" stroke="#6E7F8D"/>
+                  <circle cx="75" cy="25" r="5" fill="#879BA9" stroke="#6E7F8D"/>
+                  
+                 
+                  <rect x="20" y="23" width="10" height="1" fill="#D1DDE6" rx="0.5"/>
+                  <rect x="23" y="20" width="1" height="10" fill="#D1DDE6" rx="0.5"/>
+                  
+                  <rect x="70" y="23" width="10" height="1" fill="#D1DDE6" rx="0.5"/>
+                  <rect x="73" y="20" width="1" height="10" fill="#D1DDE6" rx="0.5"/>
+                  
+                 
+                  <circle cx="50" cy="28" r="3" fill="#2D3748"/>
+                  <circle cx="50" cy="28" r="1" fill="#63B3ED"/>
+                  
+    
+                  <circle cx="40" cy="32" r="1" fill="#48BB78"/>
+                  <circle cx="60" cy="32" r="1" fill="#F56565"/>
+                </svg>
+        </div>
+
         <div class="detection-box" id="detectionBox"></div>
         <div class="detection-label" id="detectionLabel">БПЛА 0.98</div>
+
+        <div class="detection-box" id="detectionBoxSlow"></div>
+        <div class="detection-label" id="detectionLabelSlow">БПЛА 0.95</div>
     </section>
 
     <!-- Секция проблемы -->
@@ -201,11 +238,18 @@
     <section id="demo" class="demo">
         <div class="container">
             <div class="section-title">
-                <h2>Система в действии</h2>
+                <h2>Возможные точки мониторинга</h2>
             </div>
             <div class="demo-container">
-
-                <img src="img/БПЛА2.jpg">
+                <div class="map-visual">
+                    <img src="img/map.png" 
+                     class="map-image">
+                    <div class="pulsing-point" data-tooltip="Система 'Небесный страж'" style="top: 79%; left: 10%; --delay: 0;"></div>
+                    <div class="pulsing-point" data-tooltip="Система 'Небесный страж'" style="top: 20%; left: 20%; --delay: 0.5;"></div>
+                    <div class="pulsing-point" data-tooltip="Система 'Небесный страж'" style="top: 50%; left: 60%; --delay: 1;"></div>
+                    <div class="pulsing-point" data-tooltip="Система 'Небесный страж'" style="top: 90%; left: 75%; --delay: 1.5;"></div>
+                    <div class="pulsing-point" data-tooltip="Система 'Небесный страж'" style="top: 20%; left: 90%; --delay: 2;"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -242,7 +286,7 @@
                     </div>
                 </div>
                 <div class="tech-category" data-category="frontend" style="display: none;">
-                    <h3>Frontend</h3>
+                    <h3>Frontend (диспетчерская)</h3>
                     <div class="tech-list">
                         <div class="tech-item">React</div>
                         <div class="tech-item">Leaflet</div>
@@ -271,6 +315,60 @@
         </div>
     </section>
 
+    <!-- Секция контактов -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Контакты</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Наша команда</h3>
+                    
+                    <div class="contact-team">
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <img src="https://sun9-52.userapi.com/s/v1/ig2/htc8v6UiQ4GN20EIfVgPKEHB2vZJGqvsmZWOKw5getg-W28GHw3sEVhLRQDFu36sDbB-Zsopf5-fDsitVzPNgv5n.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0" class="avatar-image">
+                            </div>
+                            <div class="member-info">
+                                <h4>Виталий Сааков</h4>
+                                <p>Data Scientist</p>
+                                <div class="member-contact">
+                                    <a href="https://t.me/vitalvats" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="m22 2-7 20-4-9-9-4 20-7z"></path>
+                                        </svg>
+                                        @vitalvats
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+
+                            <div class="member-avatar">
+                                <img src="https://sun9-35.userapi.com/s/v1/ig2/lvRJqsto7-2wXux2Exdf6HNXdpIS1Wm3RMdCsmOskldABXeG2aWsM32TpzoHISfpnTI04HMf00D17oGquwLCM8md.jpg?quality=95&as=32x55,48x82,72x123,108x185,160x274,240x411,360x616,480x822,540x924,631x1080&from=bu&cs=631x0" class="avatar-image">
+                            </div>
+
+                            <div class="member-info">
+                                <h4>Арсений Чернышев</h4>
+                                <p>Data Engineer</p>
+                                <div class="member-contact">
+                                    <a href="https://t.me/archerniy" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="m22 2-7 20-4-9-9-4 20-7z"></path>
+                                        </svg>
+                                        @archerniy
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Футер -->
     <footer>
@@ -282,6 +380,7 @@
                 <li><a href="#technology">Преимущества</a></li>
                 <li><a href="#demo">Демонстрация</a></li>
                 <li><a href="#tech-stack">Технологии</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
         </div>
     </footer>
@@ -354,74 +453,177 @@
             
             // Анимация дрона в герое
             const droneHero = document.querySelector('.drone-hero');
+            const droneHeroSlow = document.querySelector('.drone-hero-slow');
             const droneTrail = document.querySelector('.drone-trail');
             const detectionBox = document.getElementById('detectionBox');
             const detectionLabel = document.getElementById('detectionLabel');
-            
+            const detectionBoxSlow = document.getElementById('detectionBoxSlow');
+            const detectionLabelSlow = document.getElementById('detectionLabelSlow');
+
+            // Функция для получения случайного числа в диапазоне
+            function getRandom(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
             function animateDroneHero() {
                 droneHero.style.opacity = '0';
+                droneHeroSlow.style.opacity = '0';
                 droneTrail.innerHTML = '';
                 
-                setTimeout(() => {
-                    droneHero.style.opacity = '1';
-                    const duration = 15000;
-                    const startTime = Date.now();
-                    
-                    function update() {
-                        const elapsed = Date.now() - startTime;
-                        const progress = elapsed / duration;
-                        
-                        if (progress < 1) {
-                            const x = progress * 190 - 50;
-                            const y = 30 + 10 * Math.sin(progress * Math.PI * 2);
-                            
-                            droneHero.style.left = `${x}%`;
-                            droneHero.style.top = `${y}%`;
-                            
-                            // Создание следа
-                            if (elapsed % 100 < 16) {
-                                const particle = document.createElement('div');
-                                particle.style.position = 'absolute';
-                                particle.style.width = '4px';
-                                particle.style.height = '4px';
-                                particle.style.backgroundColor = 'rgba(37, 99, 235, 0.3)';
-                                particle.style.borderRadius = '50%';
-                                particle.style.left = `${x}%`;
-                                particle.style.top = `${y+4}%`;
-                                particle.style.transform = 'translate(-50%, -50%)';
-                                particle.style.opacity = '1';
-                                droneTrail.appendChild(particle);
-                                
-                                setTimeout(() => {
-                                    particle.style.opacity = '0';
-                                    setTimeout(() => particle.remove(), 500);
-                                }, 1500);
-                            }
+                // Разные задержки для дронов
+                const fastDroneDelay = getRandom(1000, 3000); // Быстрый дрон появляется раньше
+                const slowDroneDelay = getRandom(4000, 7000); // Медленный дрон появляется позже
+                
+                // Запускаем анимацию быстрого дрона
+                setTimeout(() => animateFastDrone(), fastDroneDelay);
+                
+                // Запускаем анимацию медленного дрона с задержкой
+                setTimeout(() => animateSlowDrone(), slowDroneDelay);
+            }
 
-                            // Обновление рамки обнаружения
-                            if (progress > 0 && progress < 0.9) {
-                                detectionBox.style.opacity = '1';
-                                detectionBox.style.left = `${x-0.5}%`;
-                                detectionBox.style.top = `${y-0.5}%`;
-                                detectionBox.style.width = '50px';
-                                detectionBox.style.height = '50px';
-                                
-                                detectionLabel.style.opacity = '1';
-                                detectionLabel.style.left = `${x-0.5}%`;
-                                detectionLabel.style.top = `${y-4}%`;
-                            } else {
-                                detectionBox.style.opacity = '0';
-                                detectionLabel.style.opacity = '0';
-                            }
-                            
-                            requestAnimationFrame(update);
-                        } else {
-                            animateDroneHero();
-                        }
-                    }
+            function animateFastDrone() {
+                droneHero.style.opacity = '1';
+                const duration = 12000; // Быстрый дрон летит быстрее
+                const startTime = Date.now();
+                
+                // Параметры для быстрого дрона - резкие и быстрые движения
+                const randomStartY = getRandom(15, 35);
+                const randomAmplitude = getRandom(3, 8);
+                const randomSpeed = getRandom(1.5, 3);
+                const direction = Math.random() > 0.5 ? 1 : -1;
+                const startX = direction > 0 ? -60 : 250;
+                
+                function updateFastDrone() {
+                    const elapsed = Date.now() - startTime;
+                    const progress = elapsed / duration;
                     
-                    requestAnimationFrame(update);
-                }, 2000);
+                    if (progress < 1) {
+                        const x = startX + progress * 310 * direction;
+                        const y = randomStartY + randomAmplitude * Math.sin(progress * Math.PI * 4 * randomSpeed);
+                        
+                        droneHero.style.left = `${x}%`;
+                        droneHero.style.top = `${y}%`;
+                        
+                        // Создание следа для быстрого дрона (чаще и ярче)
+                        if (elapsed % 50 < 10) {
+                            createParticle(x, y, 'rgba(37, 99, 235, 0.3)', 500, 1500);
+                        }
+
+                        updateDetectionBox(x, y, progress, 'fast');
+                        requestAnimationFrame(updateFastDrone);
+                    } else {
+                        droneHero.style.opacity = '0';
+                        detectionBox.style.opacity = '0';
+                        detectionLabel.style.opacity = '0';
+                    }
+                }
+                
+                requestAnimationFrame(updateFastDrone);
+            }
+
+            function animateSlowDrone() {
+                droneHeroSlow.style.opacity = '1';
+                const duration = 20000; // Медленный дрон летит медленнее
+                const startTime = Date.now();
+                
+                // Параметры для медленного дрона - плавные и медленные движения
+                const randomStartY = getRandom(20, 60);
+                const randomAmplitude = getRandom(8, 20);
+                const randomSpeed = getRandom(0.3, 1);
+                
+                // Медленный дрон всегда летит в противоположном направлении от быстрого
+                const fastDroneDirection = parseFloat(droneHero.style.left) < 50 ? 1 : -1;
+                const direction = -fastDroneDirection; // Противоположное направление
+                const startX = direction > 0 ? -70 : 260;
+                
+                function updateSlowDrone() {
+                    const elapsed = Date.now() - startTime;
+                    const progress = elapsed / duration;
+                    
+                    if (progress < 1) {
+                        const x = startX + progress * 330 * direction;
+                        const y = randomStartY + randomAmplitude * Math.sin(progress * Math.PI * 2 * randomSpeed);
+                        
+                        droneHeroSlow.style.left = `${x}%`;
+                        droneHeroSlow.style.top = `${y}%`;
+                        
+                        // Создание следа для медленного дрона (реже и прозрачнее)
+                        if (elapsed % 150 < 15) {
+                            createParticle(x, y, 'rgba(37, 99, 235, 0.3)', 600, 1600);
+                        }
+
+                        updateDetectionBox(x, y, progress, 'slow');
+                        requestAnimationFrame(updateSlowDrone);
+                    } else {
+                        droneHeroSlow.style.opacity = '0';
+                        detectionBoxSlow.style.opacity = '0';
+                        detectionLabelSlow.style.opacity = '0';
+                        // Перезапускаем всю анимацию после завершения медленного дрона
+                        setTimeout(animateDroneHero, 3000);
+                    }
+                }
+                
+                requestAnimationFrame(updateSlowDrone);
+            }
+
+            // Функция создания частицы следа
+            function createParticle(x, y, color, minFadeTime, maxFadeTime) {
+                const particle = document.createElement('div');
+                particle.style.position = 'absolute';
+                particle.style.width = '6px';
+                particle.style.height = '6px';
+                particle.style.backgroundColor = color;
+                particle.style.borderRadius = '50%';
+                particle.style.left = `${x+2}%`;
+                particle.style.top = `${y + 4}%`;
+                particle.style.transform = 'translate(-50%, -50%)';
+                particle.style.opacity = '1';
+                particle.style.zIndex = '5';
+                droneTrail.appendChild(particle);
+                
+                const fadeTime = getRandom(minFadeTime, maxFadeTime);
+                setTimeout(() => {
+                    particle.style.opacity = '0';
+                    setTimeout(() => particle.remove(), 500);
+                }, fadeTime);
+            }
+
+            // Обновленная функция для рамок обнаружения
+            function updateDetectionBox(x, y, progress, droneType) {
+                if (droneType === 'fast') {
+                    // Для БЫСТРОГО дрона
+                    if (progress > 0.1 && progress < 0.9) {
+                        detectionBox.style.opacity = '1';
+                        detectionBox.style.left = `${x - 0.5}%`;
+                        detectionBox.style.top = `${y - 0.5}%`;
+                        detectionBox.style.width = '45px';
+                        detectionBox.style.height = '45px';
+                        
+                        detectionLabel.style.opacity = '1';
+                        detectionLabel.style.left = `${x - 0.5}%`;
+                        detectionLabel.style.top = `${y - 4}%`;
+                    } else {
+                        detectionBox.style.opacity = '0';
+                        detectionLabel.style.opacity = '0';
+                    }
+                } else if (droneType === 'slow') {
+                    // Для МЕДЛЕННОГО дрона
+                    if (progress > 0.1 && progress < 0.9) {
+                        detectionBoxSlow.style.opacity = '1';
+                        detectionBoxSlow.style.left = `${x - 0.5}%`;
+                        detectionBoxSlow.style.top = `${y - 0.5}%`;
+                        detectionBoxSlow.style.width = '45px'; // Больше размер
+                        detectionBoxSlow.style.height = '45px';
+                        
+                        detectionLabelSlow.style.opacity = '1';
+                        detectionLabelSlow.style.left = `${x - 0.5}%`;
+                        detectionLabelSlow.style.top = `${y - 4}%`;
+    
+                    } else {
+                        detectionBoxSlow.style.opacity = '0';
+                        detectionLabelSlow.style.opacity = '0';
+                    }
+                }
             }
             
             // Запуск анимации дрона после загрузки
@@ -443,5 +645,4 @@
         });
     </script>
 </body>
-
 </html>
