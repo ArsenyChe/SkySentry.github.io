@@ -11,31 +11,41 @@
 <body>
     <!-- Навигация -->
     <nav>
-        <div class="container nav-container">
-            <a href="https://arsenyche.github.io/SkySentry.github.io/" class="logo-link">
-                <div class="logo">SkySentry</div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#problem">Проблема</a></li>
-                <li><a href="#technology">Преимущества</a></li>
-                <li><a href="#demo">Демонстрация</a></li>
-                <li><a href="#tech-stack">Технологии</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="nav-background">
+            <div class="container nav-container">
+                <a href="https://arsenyche.github.io/SkySentry.github.io/" class="logo-link">
+                    <div class="logo">SkySentry</div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#problem">Проблема</a></li>
+                    <li><a href="#technology">Преимущества</a></li>
+                    <li><a href="#demo">Демонстрация</a></li>
+                    <li><a href="#tech-stack">Технологии</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Герой секция -->
     <section class="hero">
-        <div class="container hero-content">
-            <h1>Небесный страж</h1>
-            <p>Адаптивная система раннего обнаружения и оповещения о БПЛА</p>
-            <a href="#demo" class="btn">Демонстрация</a>
+        <div class="container">
+            <div class="hero-block">
+                <div class="hero-content">
+                        <h1 class="hero-title">НЕБЕСНЫЙ СТРАЖ</h1>
+                        <p class="hero-subtitle">АДАПТИВНАЯ СИСТЕМА РАННЕГО ОБНАРУЖЕНИЯ И ОПОВЕЩЕНИЯ О БПЛА</p>
+                </div>
+                <div class="hero-action">
+                    <span class="demo-text">Посмотрите, как это работает</span>
+                    <a href="#demo" class="demo-button">Демонстрация</a>
+                </div>
+            </div>
+
         </div>
         <div class="cityscape"></div>
         <div class="drone-trail"></div>
@@ -72,33 +82,8 @@
 
         <div class="drone-hero-slow">
                 <!-- Корпус (основная часть) -->
-                <svg width="260" height="196" viewBox="0 0 100 60">
-                  
-                  <path d="M30 30 Q50 15 70 30 Q50 45 30 30" fill="#A0B9C8" stroke="#879BA9" stroke-width="1"/>
-                  
+                <img src="img\dron_fly.png">
                 
-                  <path d="M35 35 L35 45 L37 45 L37 35" fill="#B8C9D6"/>
-                  <path d="M63 35 L63 45 L65 45 L65 35" fill="#B8C9D6"/>
-                  
-                  
-                  <circle cx="25" cy="25" r="5" fill="#879BA9" stroke="#6E7F8D"/>
-                  <circle cx="75" cy="25" r="5" fill="#879BA9" stroke="#6E7F8D"/>
-                  
-                 
-                  <rect x="20" y="23" width="10" height="1" fill="#D1DDE6" rx="0.5"/>
-                  <rect x="23" y="20" width="1" height="10" fill="#D1DDE6" rx="0.5"/>
-                  
-                  <rect x="70" y="23" width="10" height="1" fill="#D1DDE6" rx="0.5"/>
-                  <rect x="73" y="20" width="1" height="10" fill="#D1DDE6" rx="0.5"/>
-                  
-                 
-                  <circle cx="50" cy="28" r="3" fill="#2D3748"/>
-                  <circle cx="50" cy="28" r="1" fill="#63B3ED"/>
-                  
-    
-                  <circle cx="40" cy="32" r="1" fill="#48BB78"/>
-                  <circle cx="60" cy="32" r="1" fill="#F56565"/>
-                </svg>
         </div>
 
         <div class="detection-box" id="detectionBox"></div>
@@ -111,18 +96,35 @@
     <!-- Секция проблемы -->
     <section id="problem" class="problem">
         <div class="container">
-            <div class="section-title">
-                <h2>Проблема</h2>
-            </div>
-            <div class="problem-content">
-                <div class="problem-text">
-                    <p>Приграничные территории и крупные города столкнулись с новой реальностью — регулярными атаками дронов, которые несут двойную угрозу:</p><br>
-                        <p>- Прямая опасность для населения: падения БПЛА на жилые кварталы.</p>
-                        <p>- Риск для инфраструктуры: атаки на промышленные объекты и энергетические комплексы. </p><br>
-                    <p>Существующие системы ПВО не обеспечивают массовую защиту городов от низколетящих малозаметных целей, а времени на реакцию часто остаются секунды.</p>
+            <div class="problem-section">
+                <div class="left-column">
+                    <h2 class="section-title">ПРОБЛЕМА</h2>
+                    <p class="problem-description">
+                        Приграничные территории и крупные города столкнулись с новой реальностью — регулярными атаками дронов, которые несут двойную угрозу:
+                    </p>
+                    <img src="img/dron.png">
                 </div>
-                <div class="problem-visual">
-                    <img src="img/БПЛА.jpg">
+                <div class="right-column">
+                    <div class="right-column-top">
+                        <div class="card">
+                            <h3 class="card-title">Падения БПЛА</h3>
+                            <p class="card-content">
+                                Падения беспилотных летательных аппаратов на территории жилых кварталов представляют собой прямую опасность для населения, приводя к разрушениям, пожарам и человеческим жертвам.
+                            </p>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Риск для инфраструктуры</h3>
+                            <p class="card-content">
+                                Целенаправленные удары по промышленным и энергетическим объектам парализуют жизнь городов и наносят колоссальный экономический ущерб.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-big">
+                        <p class="card-content">
+                            Целенаправленные удары по промышленным и энергетическим объектам парализуют жизнь городов и наносят колоссальный экономический ущерб.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,36 +133,37 @@
         <!-- Наше решение -->
     <section id="solution" class="solution">
         <div class="container">
-            <div class="section-title">
-                <h2>Наше решение</h2>
-            </div>
-            <div class="solution-content">
-                <div class="solution-text">
-                    <h3>«Небесный страж»</h3>
-                    <p>Это сеть автономных модулей видеонаблюдения, размещаемых на крышах высотных зданий, которая в полностью автоматическом режиме решает три задачи:</p>
+            <div class="solution-section">
+                <div class="left-column">
+                    <h2 class="section-title">НАШЕ РЕШЕНИЕ</h2>
+                    <p class="problem-description">
+                        «Небесный страж»
+                        Это сеть автономных модулей видеонаблюдения,  размещаемых на крышах высотных зданий, которая в полностью  автоматическом режиме решает три задачи:
+                    </p>
                 </div>
-                <div class="solution-steps">
-                    <div class="solution-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Детекция</h3>
-                            <p>Обнаруживает БПЛА в воздушном пространстве на подлете к городу с помощью алгоритмов компьютерного зрения (AI), обученных на распознавание военных дронов.</p>
+                <div class="right-column">
+                    <div class="right-column-top">
+                        <div class="solution-card">
+                            <h3 class="card-title">Верификация</h3>
+                            <p class="card-content">
+                                Передает видеопоток и координаты обнаруженного объекта дежурному  диспетчеру для подтверждения угрозы и исключения ложных срабатываний
+                            </p>
+                        </div>
+                        
+                        <div class="solution-card">
+                            <h3 class="card-title">Детекция</h3>
+                            <p class="card-content">
+                                Обнаруживает БПЛА в воздушном пространстве на подлете к городу с помощью алгоритмов компьютерного зрения (AI), обученных на распознавание  военных дронов
+                            </p>
                         </div>
                     </div>
-                    <div class="solution-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Верификация</h3>
-                            <p>Передает видеопоток и координаты обнаруженного объекта дежурному диспетчеру для подтверждения угрозы и исключения ложных срабатываний.</p>
-                        </div>
+                    <div class="solution-card-big">
+                        <h3 class="card-title">Оповещение</h3>
+                        <p class="card-content">
+                            После подтверждения диспетчером, система инициирует тревогу:  отправляет сигнал в МЧС, ВНГ и включает сирены системы гражданской  обороны и рассылает push-уведомления через мобильные приложения,  городские каналы связи и сотовых операторов
+                        </p>
                     </div>
-                    <div class="solution-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Оповещение</h3>
-                            <p>После подтверждения диспетчером, система инициирует тревогу: отправляет сигнал в МЧС, ВНГ и включает сирены системы гражданской обороны и рассылает push-уведомления через мобильные приложения, городские каналы связи и сотовых операторов.</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -169,86 +172,72 @@
     <!-- Секция технологии -->
     <section id="technology" class="technology">
         <div class="container">
-            <div class="section-title">
-                <h2>Ключевые преимущества</h2>
-            </div>
-            <div class="process-flow">
-                <div class="process-line"></div>
-                
-                <div class="process-step">
-                    <div class="step-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0047AB" stroke="#0047AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10" fill="#fff"/>
-                            <circle cx="12" cy="12" r="4" fill="#fff"/>
-                            <line x1="21" y1="12" x2="19" y2="12" stroke="#0047AB"/>
-                            <line x1="5" y1="12" x2="3" y2="12" stroke="#0047AB"/>
-                            <line x1="12" y1="21" x2="12" y2="19" stroke="#0047AB"/>
-                            <line x1="12" y1="5" x2="12" y2="3" stroke="#0047AB"/>
-                        </svg>
+            <h2 class="section-title">КЛЮЧЕВЫЕ ПРЕИМУЩЕСТВА:</h2>
+            <div class="technology-section">
+                <div class="right-column">
+                    <div class="right-column-top">
+
+                        <div class="card">
+                            <h3 class="card-title">Верификация</h3>
+                            <p class="card-content">
+                                Передает видеопоток и координаты обнаруженного объекта дежурному  диспетчеру для подтверждения угрозы и исключения ложных срабатываний
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Верификация</h3>
+                            <p class="card-content">
+                                Передает видеопоток и координаты обнаруженного объекта дежурному  диспетчеру для подтверждения угрозы и исключения ложных срабатываний
+                            </p>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Детекция</h3>
+                            <p class="card-content">
+                                Обнаруживает БПЛА в воздушном пространстве на подлете к городу с помощью алгоритмов компьютерного зрения (AI), обученных на распознавание  военных дронов
+                            </p>
+                        </div>
                     </div>
-                    <div class="step-content">
-                        <h3>Раннее обнаружение</h3>
-                        <p>За счет размещения камер на высоте мы «видим» дальше и даем драгоценные дополнительные секунды на реакцию.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="#0047AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10" fill="#fff"/>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="#0047AB" fill="#fff"/>
-                            <line x1="9" y1="9" x2="9.01" y2="9" stroke="#0047AB"/>
-                            <line x1="15" y1="9" x2="15.01" y2="9" stroke="#0047AB"/>
-                        </svg>
-                    </div>
-                    <div class="step-content">
-                        <h3>Ценовая доступность и масштабируемость</h3>
-                        <p>В основе — стандартные камеры и вычислительные блоки. Стоимость одного узла в разы ниже промышленных аналогов, что позволяет постепенно закрывать весь город сетью.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0047AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" fill="#fff"/>
-                        </svg>
-                    </div>
-                    <div class="step-content">
-                        <h3>Интеграция</h3>
-                        <p>Система не заменяет, а усиливает существующие силы МЧС и правоохранительных органов, предоставляя им «цифровые глаза» и инструмент для мгновенного оповещения.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0047AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="#fff"/>
-                        </svg>
-                    </div>
-                    <div class="step-content">
-                        <h3>Фокус на гражданской защите</h3>
-                        <p>Мы решаем не военную, а гуманитарную задачу — спасение жизней мирных жителей.</p>
+                    <div class="right-column-top">
+                        <div class="card">
+                            <h3 class="card-title">Верификация</h3>
+                            <p class="card-content">
+                                Передает видеопоток и координаты обнаруженного объекта дежурному  диспетчеру для подтверждения угрозы и исключения ложных срабатываний
+                            </p>
+                        </div>
+                        <div class="img-card-big">
+                            <div class="image-clip">
+                                <img src="img\dron_big_card.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Секция демонстрации -->
-    <section id="demo" class="demo">
+    <section class="drone" id="drone">
         <div class="container">
-            <div class="section-title">
-                <h2>Возможные точки мониторинга</h2>
-            </div>
-            <div class="demo-container">
-                <div class="map-visual">
-                    <img src="img/map.png" 
-                     class="map-image">
-                    <div class="pulsing-point" data-tooltip="Система 'Небесный страж'" style="top: 79%; left: 10%; --delay: 0;"></div>
-                    <div class="pulsing-point" data-tooltip="Система 'Небесный страж'" style="top: 20%; left: 20%; --delay: 0.5;"></div>
-                    <div class="pulsing-point" data-tooltip="Система 'Небесный страж'" style="top: 50%; left: 60%; --delay: 1;"></div>
-                    <div class="pulsing-point" data-tooltip="Система 'Небесный страж'" style="top: 90%; left: 75%; --delay: 1.5;"></div>
-                    <div class="pulsing-point" data-tooltip="Система 'Небесный страж'" style="top: 20%; left: 90%; --delay: 2;"></div>
+            <div class="drone-container" id="mainContainer">
+                <div class="up-section" id="mapSection">
+                    <div class="png-container" id="mainImage">
+                        <img src="img\fairy_rock.png" alt="Drone Map">
+                    </div>
+                    <div class="gif-container" id="gifContainer">
+                        <img src="img\1.gif" alt="Drone GIF">
+                    </div>
+                    <button class="swap-button" id="swapButton">Переключить вид</button>
+                </div>
+                <div class="bottom-section">
+                    <div class="drone-header">
+                        <img src="img\БПЛА.jpg" alt="Drone" class="drone-image">
+                        <div class="drone-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Модель:</span>
+                                <span class="spec-value">Горлица</span>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -386,6 +375,46 @@
     </footer>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainContainer = document.getElementById('mainContainer');
+            const swapButton = document.getElementById('swapButton');
+            
+            // Функция для переключения состояния
+            function toggleSwap() {
+                mainContainer.classList.toggle('swapped');
+            }
+            
+            // Добавляем обработчик события на кнопку
+            swapButton.addEventListener('click', toggleSwap);
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+        const animatedElements = document.querySelectorAll('.problem, .problem-content, .solution, .solution-content, .technology, .demo, .tech-stack, .contact');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        animatedElements.forEach(element => {
+            observer.observe(element);
+        });
+
         // Анимации при прокрутке
         document.addEventListener('DOMContentLoaded', function() {
             // Плавная прокрутка для навигационных ссылок
@@ -483,7 +512,7 @@
 
             function animateFastDrone() {
                 droneHero.style.opacity = '1';
-                const duration = 12000; // Быстрый дрон летит быстрее
+                const duration = 32000; // Быстрый дрон летит быстрее
                 const startTime = Date.now();
                 
                 // Параметры для быстрого дрона - резкие и быстрые движения
@@ -523,7 +552,7 @@
 
             function animateSlowDrone() {
                 droneHeroSlow.style.opacity = '1';
-                const duration = 20000; // Медленный дрон летит медленнее
+                const duration = 40000; // Медленный дрон летит медленнее
                 const startTime = Date.now();
                 
                 // Параметры для медленного дрона - плавные и медленные движения
@@ -601,7 +630,7 @@
                         
                         detectionLabel.style.opacity = '1';
                         detectionLabel.style.left = `${x - 0.5}%`;
-                        detectionLabel.style.top = `${y - 4}%`;
+                        detectionLabel.style.top = `${y - 2.5}%`;
                     } else {
                         detectionBox.style.opacity = '0';
                         detectionLabel.style.opacity = '0';
@@ -617,7 +646,7 @@
                         
                         detectionLabelSlow.style.opacity = '1';
                         detectionLabelSlow.style.left = `${x - 0.5}%`;
-                        detectionLabelSlow.style.top = `${y - 4}%`;
+                        detectionLabelSlow.style.top = `${y - 2.5}%`;
     
                     } else {
                         detectionBoxSlow.style.opacity = '0';
@@ -634,15 +663,19 @@
             // Изменение навигации при скролле
             window.addEventListener('scroll', function() {
                 const nav = document.querySelector('nav');
+                const navBackground = document.querySelector('.nav-background');
                 if (window.scrollY > 50) {
-                    nav.style.padding = "15px 0";
-                    nav.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
+                    nav.style.padding = "10px 20px";
+                    navBackground.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
                 } else {
-                    nav.style.padding = "20px 0";
-                    nav.style.boxShadow = "0 10px 25px rgba(0, 0, 0, 0.05)";
+                    nav.style.padding = "30px 20px";
+                    navBackground.style.boxShadow = "0 10px 25px rgba(0, 0, 0, 0.05)";
                 }
             });
         });
+
+
+        
     </script>
 </body>
 </html>
