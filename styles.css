@@ -281,7 +281,7 @@ nav {
 .drone-hero {
     position: absolute;
     width: 100px;
-    height: 100px;
+    height: 80px;
     opacity: 0;
     z-index: 0;
 }
@@ -289,20 +289,20 @@ nav {
 .drone-hero-slow {
     position: absolute;
     width: 100px;
-    height: 100px;
+    height: 80px;
     opacity: 0;
     z-index: 0;
 }
 
 .drone-hero-slow img {
     width: 100px;
-    height: 100px;
+    height: 80px;
     fill: var(--color-cobalt-blue);
 }
 
 .drone-hero img {
     width: 100px;
-    height: 100px;
+    height: 80px;
     fill: var(--color-cobalt-blue);
 }
 
@@ -585,14 +585,14 @@ section {
     width: 100%;
     height: 100%;
     height: auto;      
-    transform:translateY(-60px);     
+    transform:translateY(-30px);     
 }
 .image-clip {
     position: absolute;
     bottom: 0;
 /*    left: 50%;*/
     width: 100%;
-    height: 110%;       
+    height: 137%;       
     overflow: hidden;   
 }
 
