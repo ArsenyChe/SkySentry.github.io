@@ -157,7 +157,7 @@
     <!-- Секция технологии -->
     <section id="technology" class="technology">
         <div class="container">
-            <h2 class="section-title">КЛЮЧЕВЫЕ ПРЕИМУЩЕСТВА:</h2>
+            <h2 class="section-title">КЛЮЧЕВЫЕ ПРЕИМУЩЕСТВА</h2>
             <div class="technology-section">
                 <div class="right-column">
                     <div class="right-column-top">
@@ -202,7 +202,7 @@
 
     <section class="drone" id="drone">
         <div class="container">
-            <h2 class="section-title">ДЕМОНСТРАЦИЯ:</h2>
+            <h2 class="section-title">ДЕМОНСТРАЦИЯ</h2>
             <div class="drone-container" id="mainContainer">
                 <div class="up-section" id="mapSection">
                     <button class="swap-button" id="swapButton">
@@ -221,7 +221,7 @@
                 </div>
                 <div class="bottom-section">
                     <div class="card-dron">
-                        <h3 class="card-title">ВНИМАНИЕ:</h3>
+                        <h3 class="card-title">ВНИМАНИЕ</h3>
                         <p class="card-content">
                             Камера: 042 <br>
                             Район: Ворошиловский<br>
@@ -239,7 +239,7 @@
     <!-- Секция технологического стека -->
     <section id="tech-stack" class="tech-stack">
         <div class="container">
-            <h2 class="section-title">ТЕХНОЛОГИЧЕСКИЙ СТЕК:</h2>
+            <h2 class="section-title">ТЕХНОЛОГИЧЕСКИЙ СТЕК</h2>
             <div class="tech-tabs">
                 <div class="tech-tab active" data-tab="ai">AI / Computer Vision</div>
                 <div class="tech-tab" data-tab="backend">Backend</div>
@@ -619,6 +619,8 @@
                 const direction = Math.random() > 0.5 ? 1 : -1;
                 const startX = direction > 0 ? -60 : 250;
                 
+                droneHero.style.transform = direction > 0 ? 'scaleX(1)' : 'scaleX(-1)';
+
                 function updateFastDrone() {
                     const elapsed = Date.now() - startTime;
                     const progress = elapsed / duration;
@@ -661,6 +663,8 @@
                 const fastDroneDirection = parseFloat(droneHero.style.left) < 50 ? 1 : -1;
                 const direction = -fastDroneDirection; // Противоположное направление
                 const startX = direction > 0 ? -70 : 260;
+
+                droneHeroSlow.style.transform = direction > 0 ? 'scaleX(1)' : 'scaleX(-1)';
                 
                 function updateSlowDrone() {
                     const elapsed = Date.now() - startTime;
@@ -721,9 +725,9 @@
                     if (progress > 0.1 && progress < 0.9) {
                         detectionBox.style.opacity = '1';
                         detectionBox.style.left = `${x + 0.5}%`;
-                        detectionBox.style.top = `${y - 0.5}%`;
+                        detectionBox.style.top = `${y - 1.5}%`;
                         detectionBox.style.width = '100px';
-                        detectionBox.style.height = '100px';
+                        detectionBox.style.height = '80px';
                         
                         detectionLabel.style.opacity = '1';
                         detectionLabel.style.left = `${x + 0.5}%`;
@@ -737,9 +741,9 @@
                     if (progress > 0.1 && progress < 0.9) {
                         detectionBoxSlow.style.opacity = '1';
                         detectionBoxSlow.style.left = `${x + 0.5}%`;
-                        detectionBoxSlow.style.top = `${y - 0.5}%`;
+                        detectionBoxSlow.style.top = `${y - 1.5}%`;
                         detectionBoxSlow.style.width = '100px'; // Больше размер
-                        detectionBoxSlow.style.height = '100px';
+                        detectionBoxSlow.style.height = '80px';
                         
                         detectionLabelSlow.style.opacity = '1';
                         detectionLabelSlow.style.left = `${x + 0.5}%`;
@@ -776,4 +780,3 @@
     </script>
 </body>
 </html>
-
